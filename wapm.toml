@@ -1,0 +1,19 @@
+[package]
+name = "liftm/starlark-cmd"
+version = "0.1.0-1"
+description = "Starlark expression evaluator"
+license = "Apache-2.0"
+repository = "https://github.com/jcaesar/sl-cmd"
+readme = "README.md"
+
+[[module]]
+name = "sl-cmd"
+source = "slcmd.wasm"
+abi = "wasi"
+
+[module.interfaces]
+wasi = "0.1.0-unstable"
+
+[[command]]
+name = "sl-cmd"
+module = "sl-cmd"
