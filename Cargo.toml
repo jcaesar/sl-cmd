@@ -1,0 +1,16 @@
+[package]
+name = "starlark"
+version = "0.1.0"
+authors = ["Julius Michaelis <michaelis@jp.fujitsu.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+starlark = "0.3.1"
+codemap = "0.1.3"
+codemap-diagnostic = "0.1.1"
+
+[[bin]]
+name = "slcmd"
+path = "cmd.rs"
